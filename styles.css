@@ -4,21 +4,22 @@
     justify-content: center;
     align-items: center;
 }
-#allCryptoContainer{
+/* #allCryptoContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 50px;
+} */
+#allCryptoContainer{
+    width: 90%;
+    margin: 20px auto;
 }
-
 .singularCrypto{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 10px;
+    border-bottom: 1px solid black;
     padding: 10px;
 }
 .singularCrypto:hover{
@@ -41,4 +42,34 @@
     animation: spin 2s infinite ease-in-out alternate;
     height: 50px;
     object-fit: contain;
+}
+
+
+
+.PriceContainer{
+    display: flex;
+    gap: 20px;
+}
+
+.priceChangeColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.priceChange{
+    color: #fff;
+    padding: 2px 5px;
+    /* font-size: 12px; */
+    height: fit-content;
+    margin: 0;
+}
+
+.green-bg{
+    background-color: green;
+    border-radius: 5px;
+}
+.red-bg{
+    background-color: red;
+    border-radius: 5px;
 }
